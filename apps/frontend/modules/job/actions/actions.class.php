@@ -21,6 +21,7 @@ class jobActions extends sfActions
     {
         $this->job = Doctrine::getTable('JobeetJob')-> find($request->getParameter('id'));
         $this->forward404Unless($this->job);
+
     }
 
   public function executeNew(sfWebRequest $request)
